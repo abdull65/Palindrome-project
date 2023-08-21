@@ -1,5 +1,130 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&family=Recursive:wght@400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  #generalContainer {
+    background-color: #2c3e50;
+    height: 100vh;
+    color: #00b87b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    font-family: 'Comic Neue', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 700;
+  }
+
+  .content {
+    background-color: #fff;
+    /* width: 90rem; */
+    height: 40rem;
+    margin: 2rem auto;
+    padding: 5rem 5rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .inputBox {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  #inputSpace {
+    height: 4rem;
+    width: 60rem;
+    margin-right: .5rem;
+    padding: 0 1rem;
+    font-family: "Recursive", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1.3px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #00b87b;
+    border-radius: 5px;
+  }
+
+  #inputSpace::placeholder {
+    color: #d9d9d9af;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  #inputSpace:focus {
+    border: none;
+    outline: 2px solid #01bd5f;
+  }
+
+  #checkBtn {
+    display: inline-block;
+    height: 4rem;
+    padding: 0 2rem;
+    outline: 2px solid #01bd5f;
+    border: none;
+    background: #00b87b;
+    color: #fff;
+    font-family: "Recursive", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    border-radius: 8px;
+    transition: .1s;
+    cursor: pointer;
+  }
+
+  #checkBtn:active {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .7);
+  }
+
+  .feedbackBox {
+    display: flex;
+    flex-direction: column;
+    font-family: "Recursive", 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
+  .responseBox {
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: .8rem;
+    transition: .4s;
+  }
+
+  .isPalindrome {
+    background-color: #01bd5f;
+    padding: 1rem;
+    animation: popUp .4s;
+
+  }
+
+  .notPalindrome {
+    background-color: #f52a3b;
+    padding: 1rem;
+    animation: popUp .4s;
+  }
+
+  @keyframes popUp {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
