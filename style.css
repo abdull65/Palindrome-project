@@ -128,3 +128,45 @@
       transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 59em) {
+    #generalContainer {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    .content {
+      width: 100%;
+      padding-right: 2rem;
+      padding-left: 2rem;
+
+    }
+  }
+
+  @media screen and (max-width: 44em) {
+    #generalContainer {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    .content {
+      width: 100%;
+      padding-right: 2rem;
+      padding-left: 2rem;
+
+    }
+  }
+
+  @media screen and (max-width: 34em) {
+    #generalContainer {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    .content {
+      width: 100%;
+      padding-right: 2rem;
+      padding-left: 2rem;
+
+    }
+  }
