@@ -26,9 +26,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
 
-/*  setTimeout(() => {
+setTimeout(() => {
     respondBox.classList.toggle("close");
-  }, 500);*/
+  }, 500);
 });
 
 /////////////////////////////////////////////////////////////////////
