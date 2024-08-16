@@ -10,9 +10,8 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   const respondBox = document.querySelector(".responseBox");
 
   if (inputEl.length === 0) {
-   /* respondBox.textContent = "Input field cannot be empty!";
-    respondBox.classList.remove("isPalindrome", "notPalindrome");*/
-   alert("input field is empty!")
+    respondBox.textContent = "Input field cannot be empty!";
+    respondBox.classList.remove("isPalindrome", "notPalindrome");
     return;
   }
 
@@ -23,12 +22,15 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
   respondBox.classList.remove("isPalindrome", "notPalindrome");
 
+  setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
-  
-});
-/*setTimeout(() => {
+  }, 500);
+
+  setTimeout(() => {
     respondBox.classList.toggle("close");
-  }, 500);*/
+  }, 500);
+});
+
 /////////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
