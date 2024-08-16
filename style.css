@@ -72,7 +72,7 @@
   }
 
   #checkBtn {
-    display: flex;
+    display: inline-flex;
     align-item: center;
     justify-content: center;
     height: 4rem;
@@ -145,6 +145,8 @@ display: none;
     #checkBtn {
 width: 25%;
 font-size: 1.4rem;
+text: center;
+      padding: 0;
     }
     .content {
       width: 100%;
