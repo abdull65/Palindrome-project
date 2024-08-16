@@ -10,8 +10,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   const respondBox = document.querySelector(".responseBox");
 
   if (inputEl.length === 0) {
-    respondBox.textContent = "Input field cannot be empty!";
-    respondBox.classList.remove("isPalindrome", "notPalindrome");
+   /* respondBox.textContent = "Input field cannot be empty!";
+    respondBox.classList.remove("isPalindrome", "notPalindrome");*/
+   alert("input field is empty!")
     return;
   }
 
@@ -24,11 +25,6 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
   setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
-  }, 500);
-  
-  // Move this block inside the event listener
-  setTimeout(() => {
-    respondBox.classList.toggle("close");
   }, 500);
 });
 
