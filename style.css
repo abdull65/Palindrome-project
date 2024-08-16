@@ -151,6 +151,10 @@ width: 25%;
   }
 
   @media screen and (max-width: 44em) {
+    .title {
+      font-size: 2.4rem;
+      text-align: center;
+    }
      .inputBox {
        gap: 10px;
      }
