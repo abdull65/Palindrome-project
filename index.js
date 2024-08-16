@@ -1,3 +1,4 @@
+const respondBox = document.querySelector(".responseBox");
 document.getElementById("checkBtn").addEventListener("click", () => {
   const inputEl = document.querySelector("#inputSpace").value.trim();
 
@@ -6,8 +7,6 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     const reversedStr = str.split("").reverse().join("");
     return str === reversedStr;
   };
-
-  const respondBox = document.querySelector(".responseBox");
 
   if (inputEl.length === 0) {
     respondBox.textContent = "Input field cannot be empty!";
@@ -24,13 +23,11 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
-
-  // Hide the respondBox after 30 seconds
+});
+// Hide the respondBox after 30 seconds
   setTimeout(() => {
     respondBox.classList.toggle("close"); // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
   }, 1000); 
-});
-
 
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
