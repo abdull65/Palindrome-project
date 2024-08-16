@@ -148,6 +148,7 @@ display: none;
   @media screen and (max-width: 44em) {
      .inputBox {
        flex-direction: column;
+       gap: 20px;
      }
     #generalContainer {
       padding-right: 2rem;
