@@ -10,7 +10,6 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
   if (inputEl.length === 0) {
     respondBox.textContent = "Input field cannot be empty!";
-    respondBox.classList.remove("isPalindrome", "notPalindrome");
     return;
   }
 
