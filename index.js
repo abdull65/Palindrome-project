@@ -9,6 +9,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
 
   const respondBox = document.querySelector(".responseBox");
 
+  // Ensure respondBox is visible initially
+  respondBox.style.display = "block";
+
   if (inputEl.length === 0) {
     respondBox.textContent = "Input field cannot be empty!";
     respondBox.classList.remove("isPalindrome", "notPalindrome");
@@ -24,11 +27,11 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 1000);
-  
+
+  // Hide the respondBox after 1 second (1000 milliseconds)
   setTimeout(() => {
-    respondBox.style.display = "none"; // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
+    respondBox.style.display = "none"; // Or use respondBox.classList.add('hide'); if you prefer CSS class control
   }, 1000);
-  respondBox.style.display="block";
 });
 
 /////////////////////////////////////////////////////////////////
