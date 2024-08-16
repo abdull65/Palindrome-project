@@ -23,13 +23,14 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   respondBox.classList.remove("isPalindrome", "notPalindrome");
   setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
-  }, 500);
-
-  // Hide the respondBox after 30 seconds
+  }, 1000);
+  
   setTimeout(() => {
     respondBox.style.display = "none"; // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
-  }, 30000); // 30000 milliseconds = 30 seconds
+  }, 1000);
+  respondBox.style.display="block";
 });
+
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
