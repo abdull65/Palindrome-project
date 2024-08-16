@@ -1,5 +1,6 @@
 document.getElementById("checkBtn").addEventListener("click", () => {
   const inputEl = document.querySelector("#inputSpace").value.trim();
+  
   const isPalindrome = function (str) {
     str = str.replace(/[\s.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
     const reversedStr = str.split("").reverse().join("");
@@ -10,24 +11,27 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   
   if (inputEl.length === 0) {
     respondBox.textContent = "Input field cannot be empty!";
+    respondBox.classList.remove("isPalindrome", "notPalindrome");
     return;
   }
   
-  isPalindrome(inputEl)
-    ? (respondBox.textContent = `Nice Job! "${inputEl}" is a Palindrome!`)
-    : (respondBox.textContent = `"${inputEl}" is not a Palindrome!`);
+  const result = isPalindrome(inputEl);
+  respondBox.textContent = result
+    ? `Nice Job! "${inputEl}" is a Palindrome!`
+    : `"${inputEl}" is not a Palindrome!`;
 
   respondBox.classList.remove("isPalindrome", "notPalindrome");
   
   setTimeout(() => {
-    respondBox.classList.add(
-      isPalindrome(inputEl) ? "isPalindrome" : "notPalindrome"
-    );
+    respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
 });
+
 setTimeout(() => {
-  respondBox.classList.toggle("close")
-}, 500)
+  const respondBox = document.querySelector(".responseBox");
+  respondBox.classList.toggle("close");
+}, 500);
+
 
 /////////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
