@@ -21,15 +21,16 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     : `"${inputEl}" is not a Palindrome!`;
 
   respondBox.classList.remove("isPalindrome", "notPalindrome");
-
   setTimeout(() => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
+
+  // Hide the respondBox after 30 seconds
+  setTimeout(() => {
+    respondBox.style.display = "none"; // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
+  }, 30000); // 30000 milliseconds = 30 seconds
 });
-   setInterval(() => {
-     respondBox.classList.toggle("close");
-   }, 500)
-/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
 //     M: 1000,
