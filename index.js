@@ -31,6 +31,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     );
   }, 500);
 });
+setTimeout(() => {
+  respondBox.classList.add("close")
+}, 500)
 
 /////////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
