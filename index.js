@@ -5,22 +5,31 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     const reversedStr = str.split("").reverse().join("");
     return str === reversedStr;
   };
-  // const wordBox = document.querySelector(".palindromeText");
+
   const respondBox = document.querySelector(".responseBox");
+  
   if (inputEl.length === 0) {
-    respondBox.textContent="input field cannot be empty!";
+    respondBox.textContent = "Input field cannot be empty!";
+    respondBox.classList.remove("isPalindrome", "notPalindrome");
+
+    setTimeout(() => {
+      respondBox.textContent = "";
+    }, 500);
+
     return;
   }
+  
   isPalindrome(inputEl)
-    ? (respondBox.textContent = `Nice Job ${inputEl} is a Palindrome!`)
-    : (respondBox.textContent = `${inputEl} is not a Palindrome!`);
+    ? (respondBox.textContent = `Nice Job! "${inputEl}" is a Palindrome!`)
+    : (respondBox.textContent = `"${inputEl}" is not a Palindrome!`);
 
-  respondBox.classList.remove("isPlaindrome", "notPalindrome");
+  respondBox.classList.remove("isPalindrome", "notPalindrome");
+  
   setTimeout(() => {
     respondBox.classList.add(
       isPalindrome(inputEl) ? "isPalindrome" : "notPalindrome"
     );
-  }, 0.5);
+  }, 500);
 });
 
 /////////////////////////////////////////////////////////////////////
