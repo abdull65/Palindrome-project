@@ -8,7 +8,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   // const wordBox = document.querySelector(".palindromeText");
   const respondBox = document.querySelector(".responseBox");
   if (inputEl.length === 0) {
-    alert("input field cannot be empty!");
+    respondBox.textContent="input field cannot be empty!";
     return;
   }
   isPalindrome(inputEl)
@@ -20,7 +20,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(
       isPalindrome(inputEl) ? "isPalindrome" : "notPalindrome"
     );
-  }, 500ms);
+  }, 0.5);
 });
 
 /////////////////////////////////////////////////////////////////////
