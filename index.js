@@ -25,9 +25,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   }, 500);
 });
 // Hide the respondBox after 30 seconds
-  setTimeout(() => {
+/*  setTimeout(() => {
     respondBox.classList.toggle("close"); // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
-  }, 1000); 
+  }, 1000);*/
 
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
