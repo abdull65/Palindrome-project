@@ -23,11 +23,11 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
 });
-// Hide the respondBox after 30 seconds
-/*  setTimeout(() => {
-    respondBox.classList.toggle("close"); // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
-  }, 1000);*/
 
+setTimeout(() => {
+    respondBox.classList.toggle("close"); // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
+  }, 1000);
+  
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
