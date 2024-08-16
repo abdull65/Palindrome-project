@@ -136,7 +136,12 @@ display: none;
       padding-right: 2rem;
       padding-left: 2rem;
     }
-  #inputSpace{width: 100%;}
+  #inputSpace{
+    width: 75%;
+   }
+    #checkBtn {
+width: 25%;
+    }
     .content {
       width: 100%;
       padding-right: 2rem;
