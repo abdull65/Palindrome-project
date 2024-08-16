@@ -26,8 +26,9 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
 });
-    respondBox.classList.toggle("close");
-
+   setInterval(() => {
+     respondBox.classList.toggle("close");
+   }, 500)
 /////////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
