@@ -23,16 +23,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
   }, 500);
 });
-function close() {
-setTimeout(() => {
-    respondBox.classList.toggle("close"); // Or use respondBox.classList.add('hide'); if you have a CSS class .hide that sets display:none;
-  }, 1000);
-}
-if(respondBox.classlist.!contain("close") {
-  close()
-} else {
-  respondBox.classList.remove("close");
-}
+
   
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
