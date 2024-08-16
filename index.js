@@ -19,13 +19,13 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     : `"${inputEl}" is not a Palindrome!`;
 
   respondBox.classList.remove("isPalindrome", "notPalindrome");
-  setTimeout(() => {
-    respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
-  }, 500);
-  respondBox.classList.toggle("close");
-});
-
   
+    respondBox.classList.add(result ? "isPalindrome" : "notPalindrome");
+
+});
+setTimeout(() => {
+respondBox.classList.toggle("close");
+    }, 500);
 /////////////////////////////////////////////////////////////////
 // const convertRoman = function (num) {
 //   const romalNumerals = {
