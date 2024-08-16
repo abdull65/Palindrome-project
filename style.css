@@ -118,7 +118,9 @@
     padding: 1rem;
     animation: popUp .4s;
   }
-
+.close.responseBox {
+display: none;
+}
   @keyframes popUp {
     0% {
       transform: scale(0);
