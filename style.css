@@ -72,7 +72,9 @@
   }
 
   #checkBtn {
-    display: inline-block;
+    display: flex;
+    align-item: center;
+    justify-content: center;
     height: 4rem;
     padding: 0 2rem;
     outline: 2px solid #01bd5f;
@@ -86,6 +88,7 @@
     border-radius: 8px;
     transition: .1s;
     cursor: pointer;
+    text-align: center;
   }
 
   #checkBtn:active {
