@@ -10,12 +10,6 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   
   if (inputEl.length === 0) {
     respondBox.textContent = "Input field cannot be empty!";
-    respondBox.classList.remove("isPalindrome", "notPalindrome");
-
-    setTimeout(() => {
-      respondBox.textContent = "";
-    }, 500);
-
     return;
   }
   
@@ -32,7 +26,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
   }, 500);
 });
 setTimeout(() => {
-  respondBox.classList.add("close")
+  respondBox.classList.toggle("close")
 }, 500)
 
 /////////////////////////////////////////////////////////////////////
