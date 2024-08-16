@@ -20,7 +20,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     respondBox.classList.add(
       isPalindrome(inputEl) ? "isPalindrome" : "notPalindrome"
     );
-  }, 1);
+  }, 500ms);
 });
 
 /////////////////////////////////////////////////////////////////////
